@@ -119,6 +119,7 @@ async function fetchProjects() {
   }
 }
 
+// Projects data from json file
 function loadProjects(project) {
   let projects = document.getElementById('projectsContainer');
   let data = '';
