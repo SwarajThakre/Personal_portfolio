@@ -4,8 +4,18 @@ A responsive and modern personal portfolio website to showcase my skills, projec
 
 ## 🔗 Live Demo
 
-<a href="https://jigarsable.netlify.app/" target="_blank">**Visit Now** 🚀</a>
-<a href="https://swarajthakre.github.io/Personal_portfolio/" target="_blank">**Visit Now** 🚀</a>
+<p>
+  <a href="https://swarajthakre26.netlify.app/" target="_blank" style="padding: 8px 16px; background-color: #28a745; color: white; border-radius: 6px; text-decoration: none; font-weight: bold;">
+    🌐 View Netlify Portfolio
+  </a>
+</p>
+
+<p>
+  <a href="https://swarajthakre.github.io/Personal_portfolio/" target="_blank" style="padding: 8px 16px; background-color: #0366d6; color: white; border-radius: 6px; text-decoration: none; font-weight: bold;">
+    🔗 View GitHub Pages Portfolio
+  </a>
+</p>
+
 
 ---
 
