@@ -90,22 +90,42 @@ async function fetchSkills() {
   }
 }
 
-function loadSkills(skill) {
-  let skills = document.getElementById('skillsContainer');
+// Load skills into the skills container according to category
+
+function loadSkills(skillsData, category = 'Frontend') {
+  const skillsContainer = document.getElementById('skillsContainer');
+  const filteredSkills = skillsData.filter(
+    (skill) => skill.category === category
+  );
   let data = '';
-  skill.forEach((skill) => {
-    data += `<div class="bar">
+  filteredSkills.forEach((skill) => {
+    data += `<div class="bar" data-aos="fade-up">
       <div class="info">
         <img src="${skill.icon}" alt="${skill.name}" />
         <span>${skill.name}</span>
       </div>
     </div>`;
   });
-  skills.innerHTML = data;
+  skillsContainer.innerHTML = data;
+}
+
+// Event listener for category selection
+function setupCategorySelection(skillsData) {
+  const categoryButtons = document.querySelectorAll('.category-btn');
+
+  categoryButtons.forEach((button) => {
+    button.addEventListener('click',()=>{
+      categoryButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      const selectedCategory = button.getAttribute('data-category');
+      loadSkills(skillsData, selectedCategory);
+    })
+  });
 }
 
 fetchSkills().then((skill) => {
   loadSkills(skill);
+  setupCategorySelection(skill);
 });
 
 async function fetchProjects() {
@@ -124,7 +144,7 @@ function loadProjects(project) {
   let projects = document.getElementById('projectsContainer');
   let data = '';
   project.forEach((project) => {
-    data += `<div class="projects" data-tilt>
+    data += `<div class="projects" data-tilt data-aos="fade-up">
       <div class="project-image">
       <img src="${project.image}" alt="${project.name}" />
       </div>

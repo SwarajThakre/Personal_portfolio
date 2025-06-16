@@ -728,6 +728,47 @@ section {
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
 
+    & .skills-categories {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 2rem 30rem;
+      height: 5rem;
+      width: 45%;
+      background-color: var(--heading-color);
+      -webkit-border-radius: 0.5rem;
+      -moz-border-radius: 0.5rem;
+      -ms-border-radius: 0.5rem;
+      -o-border-radius: 0.5rem;
+      border-radius: 0.5rem;
+    }
+
+    & button {
+      background: none;
+      color: var(--white-color);
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: var(--btn-hover-bg-color);
+        box-shadow: rgb(0, 2, 161) 0px 9px 38px, rgb(0, 2, 161) 0px 5px 2px;
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05);
+      }
+    }
+
     & .row {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -767,7 +808,7 @@ section {
         margin-top: 0.5rem;
 
         & img {
-          font-size: 5rem;
+          font-size: 5.5rem;
         }
         & span {
           font-size: 1.5rem;
@@ -794,6 +835,11 @@ section {
       width: 95%;
       padding: 1rem;
       margin: 1rem auto;
+
+      & .skills-categories {
+        margin: 0 auto;
+        width: 100%;
+      }
 
       & .row {
         grid-template-columns: repeat(2, 1fr);

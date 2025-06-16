@@ -7,10 +7,10 @@
     "github": "https://github.com/SwarajThakre/js-portfolio"
   },
   {
-    "name": "Personal Portfolio",
-    "description": "A portfolio website showcasing my projects and skills.",
-    "image": "./assets/images/img/124.png",
-    "url": "https://swarajthakre26.netlify.app",
-    "github": "https://github.com/SwarajThakre/Personal_portfolio"
+    "name": "Web Design Portfolio",
+    "description": "A portfolio website designed to showcase my web design skills and projects.",
+    "image": "./assets/images/img/Screenshot 2025-06-16 201624.png",
+    "url": "https://swarajthakre1.netlify.app/",
+    "github": "https://github.com/SwarajThakre/HTML-CSS-portfolio"
   }
 ]

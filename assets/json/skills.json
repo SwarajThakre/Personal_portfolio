@@ -1,66 +1,98 @@
 [
   {
     "name": "ReactJS",
-    "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
+    "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png",
+    "category": "Frontend"
+
   },
   {
     "name": "NextJS",
-    "icon": "https://img.icons8.com/?size=60&id=AU6Wc7r56Fxz&format=png&color=000000"
+    "icon": "https://img.icons8.com/fluency/48/000000/nextjs.png",
+    "category": "Frontend"
   },
   {
     "name": "ExpressJS",
-    "icon": "https://img.icons8.com/fluency/48/000000/node-js.png"
+    "icon": "https://img.icons8.com/fluency/48/000000/node-js.png",
+    "category": "Backend"
   },
   {
     "name": "NodeJS",
-    "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
+    "icon": "https://img.icons8.com/color/48/000000/nodejs.png",
+    "category": "Backend"
   },
   {
     "name": "TailwindCSS",
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png"
+    "icon": "https://img.icons8.com/color/48/000000/tailwindcss.png",
+    "category": "Frontend"
   },
   {
     "name": "Bootstrap",
-    "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
+    "icon": "https://img.icons8.com/color/48/000000/bootstrap.png",
+    "category": "Frontend"
   },
   {
     "name": "HTML5",
-    "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+    "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png",
+    "category": "Frontend"
   },
   {
     "name": "CSS3",
-    "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    "icon": "https://img.icons8.com/color/48/000000/css3.png",
+    "category": "Frontend"
+  },
+  {
+    "name" : "Jquery",
+    "icon": "https://img.icons8.com/?size=48&id=UosOoyB3CzTS&format=png&color=000000",
+    "category": "Frontend"
   },
   {
     "name": "JavaScript",
-    "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png",
+    "category": "Frontend"
   },
   {
     "name": "MongoDB",
-    "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
+    "icon": "https://img.icons8.com/color/48/000000/mongodb.png",
+    "category": "Backend"
   },
   {
     "name": "MySQL",
-    "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png",
+    "category": "Backend"
   },
   {
     "name": "PostgreSQL",
-    "icon": "https://img.icons8.com/color/48/000000/postgreesql.png"
+    "icon": "https://img.icons8.com/color/48/000000/postgreesql.png",
+    "category": "Backend"
   },
   {
     "name": "Netlify",
-    "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
+    "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png",
+    "category": "Other"
   },
   {
     "name": "Git",
-    "icon": "https://img.icons8.com/color/48/000000/git.png"
+    "icon": "https://img.icons8.com/color/48/000000/git.png",
+    "category": "Other"
   },
   {
     "name": "GitHub",
-    "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+    "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png",
+    "category": "Other"
   },
   {
     "name": "MaterialUI",
-    "icon": "https://img.icons8.com/color/48/000000/material-ui.png"
+    "icon": "https://img.icons8.com/color/48/000000/material-ui.png",
+    "category": "Frontend"
+  },
+  {
+    "name": "Chakra UI",
+    "icon": "https://img.icons8.com/color/48/000000/chakra-ui.png",
+    "category": "Frontend"
+  },
+  {
+    "name": "Googling",
+    "icon": "https://img.icons8.com/color/48/000000/google-logo.png",
+    "category": "Other"
   }
 ]
