@@ -94,5 +94,20 @@
     "name": "Googling",
     "icon": "https://img.icons8.com/color/48/000000/google-logo.png",
     "category": "Other"
-  }
+  },
+  {
+    "name": "Postman",
+    "icon": "https://voyager.postman.com/logo/postman-logo-icon-orange.svg", 
+    "category": "Other"
+  },
+  {
+    "name" : "ChatGPT",
+    "icon" : "https://img.icons8.com/fluency/48/000000/chatgpt.png",
+    "category": "Other"
+  },
+  {
+    "name" : "VS Code",
+    "icon" : "https://img.icons8.com/fluency/48/000000/visual-studio-code-2019.png",
+    "category": "Other"
+  },
 ]
