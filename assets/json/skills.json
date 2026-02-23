@@ -108,6 +108,6 @@
   {
     "name" : "VS Code",
     "icon" : "https://img.icons8.com/fluency/48/000000/visual-studio-code-2019.png",
-    "category": "Other"
-  },
+    "category": "Other" 
+   }
 ]
