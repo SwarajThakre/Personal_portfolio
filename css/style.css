@@ -837,7 +837,7 @@ section {
       margin: 0 0 2rem 30rem;
       height: 5rem;
       width: 45%;
-      background-color: rgba(201, 27, 104, 0.08);
+      /* background-color: rgba(201, 27, 104, 0.08); */
       -webkit-border-radius: 0.5rem;
       -moz-border-radius: 0.5rem;
       -ms-border-radius: 0.5rem;
