@@ -16,8 +16,6 @@ A modern, responsive, and performance-focused portfolio built with **React.js** 
 
 # 📸 Preview
 
-> Add screenshots or GIFs here
-
 <p align="center">
 <img width="1918" height="936" alt="Screenshot 2026-06-19 143803" src="https://github.com/user-attachments/assets/84285b33-9c11-4105-b185-51c1d5cd2c0f" />
 </p>
@@ -25,7 +23,6 @@ A modern, responsive, and performance-focused portfolio built with **React.js** 
 <p align="center">
 <img width="1918" height="935" alt="Screenshot 2026-06-19 143823" src="https://github.com/user-attachments/assets/759cb470-09a4-478c-a5f4-dc24b4eb4eb1" />
 </p>
-
 
 ---
 
