@@ -67,10 +67,17 @@ body {
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Outfit', system-ui, sans-serif;
   color: var(--heading);
   font-weight: 700;
@@ -124,7 +131,10 @@ section {
   font-family: 'Outfit', sans-serif;
   border: none;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    background 0.2s;
 }
 
 .btn--primary {
@@ -235,7 +245,9 @@ section {
   border-radius: 5rem;
   padding: 0.4rem;
   cursor: pointer;
-  transition: border-color 0.2s, background 0.2s;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
 }
 
 .theme-toggle:hover {
@@ -283,7 +295,9 @@ section {
   padding: 0.8rem 1.4rem;
   border-radius: 0.6rem;
   color: var(--text-muted);
-  transition: color 0.2s, background 0.2s;
+  transition:
+    color 0.2s,
+    background 0.2s;
 }
 
 .navbar a:hover,
@@ -404,15 +418,26 @@ section {
 
 .hero__image img {
   width: min(38rem, 100%);
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   box-shadow: var(--shadow);
   position: relative;
   z-index: 1;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
 }
 
 @keyframes pulse-ring {
-  0%, 100% { transform: scale(1); opacity: 0.3; }
-  50% { transform: scale(1.05); opacity: 0.15; }
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.15;
+  }
 }
 
 .social-icons {
@@ -441,11 +466,28 @@ section {
   border-color: transparent;
 }
 
-.social-icons .linkedin:hover { background: #0077b5; }
-.social-icons .github:hover { background: #333; }
-.social-icons .twitter:hover { background: #1da1f2; }
-.social-icons .telegram:hover { background: #0088cc; }
-.social-icons .instagram:hover { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.social-icons .linkedin:hover {
+  background: #0077b5;
+}
+.social-icons .github:hover {
+  background: #333;
+}
+.social-icons .twitter:hover {
+  background: #1da1f2;
+}
+.social-icons .telegram:hover {
+  background: #0088cc;
+}
+.social-icons .instagram:hover {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
 
 /* About */
 .about__grid {
@@ -580,7 +622,9 @@ section {
   border: 1px solid var(--border);
   border-radius: 1.6rem;
   overflow: hidden;
-  transition: transform 0.25s, box-shadow 0.25s;
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
 }
 
 .education-card:hover {
@@ -625,6 +669,40 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   gap: 2.5rem;
+}
+
+.projects__filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 auto 3rem;
+  max-width: 70rem;
+}
+
+.projects__filter-btn {
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text);
+  padding: 0.9rem 1.6rem;
+  border-radius: 999px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.projects__filter-btn:hover,
+.projects__filter-btn.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.projects__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
 .project-card {
@@ -694,7 +772,9 @@ section {
   font-weight: 600;
   background: var(--secondary-soft);
   color: var(--secondary);
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
 .project-card__links a:hover {
@@ -740,7 +820,9 @@ section {
   font-size: 1.5rem;
   font-family: 'DM Sans', sans-serif;
   color: var(--heading);
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 
 .form-field input:focus,
@@ -780,8 +862,12 @@ section {
   font-weight: 600;
 }
 
-.form-status--success { color: #38a169; }
-.form-status--error { color: #e53e3e; }
+.form-status--success {
+  color: #38a169;
+}
+.form-status--error {
+  color: #e53e3e;
+}
 
 /* Footer */
 .footer {
@@ -873,8 +959,13 @@ section {
 }
 
 @keyframes heartbeat {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.2); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }
 
 /* Responsive */
@@ -936,7 +1027,9 @@ section {
     transform: translateY(-120%);
     opacity: 0;
     pointer-events: none;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
   }
 
   .navbar--open {

@@ -41,7 +41,9 @@ export default function Footer() {
               href={href}
               onClick={(e) => {
                 e.preventDefault();
-                document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+                document
+                  .querySelector(href)
+                  ?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
               <FaChevronRight /> {label}
@@ -52,7 +54,7 @@ export default function Footer() {
         <div className="footer__box">
           <h3>Contact Info</h3>
           <p>
-            <FaPhone /> +91 XXX-XXX-XXXX
+            <FaPhone /> +91 9049443446
           </p>
           <p>
             <FaEnvelope /> swarajthakre.stud@gmail.com

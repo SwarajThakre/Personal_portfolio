@@ -1,22 +1,46 @@
+import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaExternalLinkAlt, FaGithub, FaLaptopCode } from 'react-icons/fa';
 import { projects } from '../data/projects';
-import SectionHeading from './SectionHeading';
+import SectionHeading from '../components/SectionHeading';
 
-export default function Projects({ onViewAll }) {
-  const featuredProjects = projects.slice(0, 6);
+const categories = ['All Projects', 'Basic Web', 'JavaScript', 'React'];
+
+export default function AllProjects() {
+  const [activeCategory, setActiveCategory] = useState('All Projects');
+
+  const filteredProjects = useMemo(() => {
+    if (activeCategory === 'All Projects') {
+      return projects;
+    }
+
+    return projects.filter((project) => project.category === activeCategory);
+  }, [activeCategory]);
 
   return (
-    <section className="projects section" id="project">
+    <section className="projects section" id="all-projects">
       <SectionHeading icon={FaLaptopCode}>
-        My <span>Projects</span>
+        All <span>Projects</span>
       </SectionHeading>
       <p className="section-quote">
-        The best way to predict the future is to create it.
+        A complete collection of my work and experiments.
       </p>
 
+      <div className="projects__filters">
+        {categories.map((category) => (
+          <button
+            key={category}
+            type="button"
+            className={`projects__filter-btn ${activeCategory === category ? 'active' : ''}`}
+            onClick={() => setActiveCategory(category)}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+
       <div className="projects__grid">
-        {featuredProjects.map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <motion.article
             key={project.name}
             className="project-card"
@@ -55,12 +79,6 @@ export default function Projects({ onViewAll }) {
             </div>
           </motion.article>
         ))}
-      </div>
-
-      <div className="projects__actions">
-        <button type="button" className="btn btn--primary" onClick={onViewAll}>
-          View all
-        </button>
       </div>
     </section>
   );

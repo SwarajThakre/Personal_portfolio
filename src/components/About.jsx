@@ -18,9 +18,13 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <img
-            src="public/assets/images/img/IMG-20241215-WA0012.jpg"
+            src="assets/images/img/IMG-20241215-WA0012.jpg"
             alt="Swaraj Thakre"
             draggable="false"
+            loading="lazy"
+            decoding="async"
+            width="480"
+            height="520"
           />
         </motion.div>
 

@@ -11,7 +11,7 @@ const navLinks = [
   { href: '#contact', label: 'Contact' },
 ];
 
-export default function Header() {
+export default function Header({ onNavigateSection }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
@@ -37,13 +37,26 @@ export default function Header() {
 
   const handleNavClick = (href) => {
     setMenuOpen(false);
+
+    if (onNavigateSection) {
+      onNavigateSection(href);
+      return;
+    }
+
     const el = document.querySelector(href);
     el?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <header className={`header ${menuOpen ? 'header--open' : ''}`}>
-      <a href="#home" className="logo" onClick={(e) => { e.preventDefault(); handleNavClick('#home'); }}>
+      <a
+        href="#home"
+        className="logo"
+        onClick={(e) => {
+          e.preventDefault();
+          handleNavClick('#home');
+        }}
+      >
         Swaraj<span>Thakre</span>
       </a>
 

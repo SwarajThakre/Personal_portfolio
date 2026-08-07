@@ -4,7 +4,7 @@ import SectionHeading from './SectionHeading';
 
 const education = [
   {
-    image: 'public/assets/images/img/viva-college-photo-new-campus.png',
+    image: 'assets/images/img/viva-college-photo-new-campus.png',
     title: 'Hsc Science & Bachelor of Science in Information Technology',
     institution: 'Viva College | HSc and BSc.IT',
     period: '2016 - 2022 | Completed',
@@ -12,7 +12,7 @@ const education = [
   },
   {
     image:
-      'public/assets/images/img/national-english-high-school-manvelpada-virar-east-palghar-secondary-schools-bk2511lyg4.avif',
+      'assets/images/img/national-english-high-school-manvelpada-virar-east-palghar-secondary-schools-bk2511lyg4.avif',
     title: 'SSC',
     institution: 'National English High School | SSC',
     period: '2016 | Completed',
@@ -42,7 +42,15 @@ export default function Education() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <div className="education-card__image">
-              <img src={item.image} alt={item.alt} draggable="false" />
+              <img
+                src={item.image}
+                alt={item.alt}
+                draggable="false"
+                loading="lazy"
+                decoding="async"
+                width="640"
+                height="420"
+              />
             </div>
             <div className="education-card__content">
               <h3>{item.title}</h3>

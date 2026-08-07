@@ -52,7 +52,14 @@ export default function Contact() {
         transition={{ duration: 0.6 }}
       >
         <div className="contact__visual">
-          <img src="public/assets/images/img/contact1.png" alt="" />
+          <img
+            src="assets/images/img/contact1.png"
+            alt=""
+            loading="lazy"
+            decoding="async"
+            width="480"
+            height="480"
+          />
         </div>
 
         <form className="contact__form" onSubmit={handleSubmit}>

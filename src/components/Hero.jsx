@@ -66,11 +66,19 @@ export default function Hero() {
             I am into{' '}
             <TypeAnimation
               sequence={[
-                'frontend development',
+                'Frontend Dvelopment',
                 2000,
-                'web designing',
+                'Web Designing',
                 2000,
-                'web development',
+                'Web Development',
+                2000,
+                'Software Development',
+                2000,
+                'Mern stack development',
+                2000,
+                'React development',
+                2000,
+                'Full stack development',
                 2000,
               ]}
               wrapper="span"
@@ -119,9 +127,14 @@ export default function Hero() {
         >
           <div className="hero__image-ring" />
           <img
-            src="public/assets/images/img/hero.webp"
+            src="assets/images/img/hero.webp"
             alt="Swaraj Thakre"
             draggable="false"
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
+            width="420"
+            height="420"
           />
         </motion.div>
       </div>
