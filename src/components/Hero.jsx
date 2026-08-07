@@ -85,7 +85,9 @@ export default function Hero() {
             className="btn btn--primary"
             onClick={(e) => {
               e.preventDefault();
-              document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
+              document
+                .querySelector('#about')
+                ?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
             About Me
@@ -117,7 +119,7 @@ export default function Hero() {
         >
           <div className="hero__image-ring" />
           <img
-            src="/assets/images/img/hero.webp"
+            src="public/assets/images/img/hero.webp"
             alt="Swaraj Thakre"
             draggable="false"
           />

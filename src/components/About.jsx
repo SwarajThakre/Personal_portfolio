@@ -18,7 +18,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <img
-            src="/assets/images/img/IMG-20241215-WA0012.jpg"
+            src="public/assets/images/img/IMG-20241215-WA0012.jpg"
             alt="Swaraj Thakre"
             draggable="false"
           />

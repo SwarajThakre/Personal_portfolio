@@ -4,7 +4,7 @@ import SectionHeading from './SectionHeading';
 
 const education = [
   {
-    image: '/assets/images/img/viva-college-photo-new-campus.png',
+    image: 'public/assets/images/img/viva-college-photo-new-campus.png',
     title: 'Hsc Science & Bachelor of Science in Information Technology',
     institution: 'Viva College | HSc and BSc.IT',
     period: '2016 - 2022 | Completed',
@@ -12,7 +12,7 @@ const education = [
   },
   {
     image:
-      '/assets/images/img/national-english-high-school-manvelpada-virar-east-palghar-secondary-schools-bk2511lyg4.avif',
+      'public/assets/images/img/national-english-high-school-manvelpada-virar-east-palghar-secondary-schools-bk2511lyg4.avif',
     title: 'SSC',
     institution: 'National English High School | SSC',
     period: '2016 | Completed',
