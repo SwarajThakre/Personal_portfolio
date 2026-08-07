@@ -1,69 +1,172 @@
-# 💼 Personal Portfolio Website
+# 🚀 Personal Portfolio
 
-A responsive and modern personal portfolio website to showcase my skills, projects, and experience as a web developer.
+A modern, responsive, and performance-focused portfolio built with **React.js** to showcase my projects, technical skills, and frontend development experience.
 
-## 🔗 Live Demo
+> Designed with a clean UI, smooth animations, reusable components, and responsive layouts to provide an engaging user experience.
 
-<p>
-  <a href="https://swarajthakre26.netlify.app/" target="_blank" style="padding: 8px 16px; background-color: #28a745; color: white; border-radius: 6px; text-decoration: none; font-weight: bold;">
-    🌐 View Netlify Portfolio
+## 🌐 Live Demo
+
+<p align="center">
+  <a href="https://swarajthakre26.netlify.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Portfolio-Visit%20Now-00C853?style=for-the-badge&logo=netlify&logoColor=white" />
   </a>
 </p>
 
-<p>
-  <a href="https://swarajthakre.github.io/Personal_portfolio/" target="_blank" style="padding: 8px 16px; background-color: #0366d6; color: white; border-radius: 6px; text-decoration: none; font-weight: bold;">
-    🔗 View GitHub Pages Portfolio
-  </a>
+---
+
+# 📸 Preview
+
+<p align="center">
+<img width="1918" height="936" alt="Screenshot 2026-06-19 143803" src="https://github.com/user-attachments/assets/84285b33-9c11-4105-b185-51c1d5cd2c0f" />
 </p>
 
+<p align="center">
+<img width="1918" height="935" alt="Screenshot 2026-06-19 143823" src="https://github.com/user-attachments/assets/759cb470-09a4-478c-a5f4-dc24b4eb4eb1" />
+</p>
 
 ---
 
-## 🛠️ Built With
+# ✨ Features
 
-![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)&nbsp;
-![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)&nbsp;
-![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-
----
-
-
-### Extras : 
-Particle.js, Typed.js, Tilt.js, Scroll Reveal, Tawk.to, Font Awesome and JSON
-
-
----
-
-## 📁 Features
-
-- 🌐 Fully responsive design for all devices  
-- 🧑‍💻 Projects section with GitHub/live links  
-- 📄 Downloadable resume  
-- 📬 Contact form  
-- 🎨 Smooth animations and transitions
+- ⚡ Modern React UI
+- 📱 Fully Responsive Design
+- 🎨 Clean & Minimal Interface
+- 🚀 Fast Loading Performance
+- 🧩 Reusable React Components
+- 📂 Projects Showcase
+- 📄 Download Resume
+- 📬 Contact Form
+- 🌙 Smooth Animations
+- 🔗 Social Media Integration
 
 ---
 
-## 🖼️ Screenshots
+# 🛠️ Tech Stack
 
-![Image](https://github.com/user-attachments/assets/4b929ec3-f226-4c46-a5f7-f368565532b7)
-![Image](https://github.com/user-attachments/assets/d21ff0e1-46a9-407e-af85-4396bcced6fe)
+<p align="left">
+
+<img src="https://skillicons.dev/icons?i=react" height="45"/>
+<img src="https://skillicons.dev/icons?i=javascript" height="45"/>
+<img src="https://skillicons.dev/icons?i=html" height="45"/>
+<img src="https://skillicons.dev/icons?i=css" height="45"/>
+<img src="https://skillicons.dev/icons?i=tailwind" height="45"/>
+<img src="https://skillicons.dev/icons?i=vite" height="45"/>
+<img src="https://skillicons.dev/icons?i=git" height="45"/>
+<img src="https://skillicons.dev/icons?i=github" height="45"/>
+
+</p>
 
 ---
 
-<h2>📬 Contact</h2>
+# 📦 Libraries Used
 
-Feel free to reach me through the below handles if you'd like to contact me.
-
-[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swaraj-thakre2629/)
-[![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/dollar_thakre26/)
+- React Router
+- Framer Motion
+- React Icons
+- EmailJS
+- Typed.js
+- Scroll Reveal
+- Font Awesome
 
 ---
 
-## 🚀 Getting Started
+# 📂 Project Structure
 
-### Clone the repository:
+```
+Portfolio/
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── hooks/
+│   ├── styles/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+└── README.md
+```
+
+---
+
+# 🚀 Installation
+
+Clone the repository
 
 ```bash
 git clone https://github.com/SwarajThakre/Personal_portfolio.git
+```
 
+Navigate to the project
+
+```bash
+cd Personal_portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run locally
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+---
+
+# 📈 Performance
+
+✔ Responsive on Mobile, Tablet & Desktop
+
+✔ Component-Based Architecture
+
+✔ Optimized Rendering
+
+✔ Clean Code Structure
+
+✔ SEO Friendly
+
+---
+
+# 📬 Connect With Me
+
+<p align="left">
+
+<a href="https://www.linkedin.com/in/swarajst/" target="_blank">
+<img src="https://skillicons.dev/icons?i=linkedin" height="45"/>
+</a>
+
+<a href="mailto:swarajthakre.stud@gmail.com">
+<img src="https://skillicons.dev/icons?i=gmail" height="45"/>
+</a>
+
+<a href="https://github.com/SwarajThakre">
+<img src="https://skillicons.dev/icons?i=github" height="45"/>
+</a>
+
+</p>
+
+---
+
+# ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub.
+
+It motivates me to continue building better projects.
+
+---
+
+<p align="center">
+Made with ❤️ by <strong>Swaraj Thakre</strong>
+</p>
