@@ -22,7 +22,7 @@ const education = [
 
 export default function Education() {
   return (
-    <section className="mx-auto max-w-[120rem] px-[5%] py-32" id="education">
+    <section className="section-spacing" id="education">
       <SectionHeading icon={FaGraduationCap}>
         My <span className="text-[color:var(--accent)]">Education</span>
       </SectionHeading>

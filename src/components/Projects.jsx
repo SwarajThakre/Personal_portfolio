@@ -7,7 +7,7 @@ export default function Projects({ onViewAll }) {
   const featuredProjects = projects.slice(0, 6);
 
   return (
-    <section className="mx-auto max-w-[120rem] px-[5%] py-32" id="project">
+    <section className="section-spacing" id="project">
       <SectionHeading icon={FaLaptopCode}>
         My <span className="text-[color:var(--accent)]">Projects</span>
       </SectionHeading>

@@ -4,7 +4,7 @@ import SectionHeading from './SectionHeading';
 
 export default function About() {
   return (
-    <section className="mx-auto max-w-[120rem] px-[5%] py-32" id="about">
+    <section className="section-spacing" id="about">
       <SectionHeading icon={FaUser}>
         About <span className="text-[color:var(--accent)]">Me</span>
       </SectionHeading>

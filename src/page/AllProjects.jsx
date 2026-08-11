@@ -18,7 +18,7 @@ export default function AllProjects() {
   }, [activeCategory]);
 
   return (
-    <section className="mx-auto max-w-[120rem] px-[5%] py-32" id="all-projects">
+    <section className="section-spacing" id="all-projects">
       <SectionHeading icon={FaLaptopCode}>
         All <span className="text-[color:var(--accent)]">Projects</span>
       </SectionHeading>

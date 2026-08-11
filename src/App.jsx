@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -10,7 +10,23 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState(() => {
+    const path = window.location.pathname.replace(/\/$/, '');
+    return path === '/allproject' || path === '/all-projects'
+      ? 'all-projects'
+      : 'home';
+  });
+
+  useEffect(() => {
+    const newPath = currentPage === 'all-projects' ? '/allproject' : '/';
+    if (window.location.pathname !== newPath) {
+      window.history.replaceState(null, '', newPath);
+    }
+
+    if (currentPage === 'all-projects') {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    }
+  }, [currentPage]);
 
   const handleNavigateSection = (sectionId) => {
     setCurrentPage('home');

@@ -39,7 +39,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="mx-auto max-w-[120rem] px-[5%] py-32" id="contact">
+    <section className="section-spacing" id="contact">
       <SectionHeading icon={FaHeadset}>
         Get in <span className="text-[color:var(--accent)]">Touch</span>
       </SectionHeading>

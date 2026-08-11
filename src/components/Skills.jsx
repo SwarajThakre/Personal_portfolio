@@ -32,7 +32,7 @@ export default function Skills() {
   };
 
   return (
-    <section className="mx-auto max-w-[120rem] px-[5%] py-32" id="skills">
+    <section className="section-spacing" id="skills">
       <SectionHeading icon={FaLaptopCode}>
         Skills & <span className="text-[color:var(--accent)]">Abilities</span>
       </SectionHeading>
