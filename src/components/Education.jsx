@@ -22,26 +22,31 @@ const education = [
 
 export default function Education() {
   return (
-    <section className="education section" id="education">
+    <section className="mx-auto max-w-[120rem] px-[5%] py-32" id="education">
       <SectionHeading icon={FaGraduationCap}>
-        My <span>Education</span>
+        My <span className="text-[color:var(--accent)]">Education</span>
       </SectionHeading>
-      <p className="section-quote">
+      <p className="mx-auto mb-16 max-w-[60rem] text-center text-[1.6rem] italic text-[color:var(--text-muted)]">
         Education is not the learning of facts, but the training of the mind to
         think.
       </p>
 
-      <div className="education__grid">
+      <div className="grid gap-10 md:grid-cols-2">
         {education.map((item, index) => (
           <motion.article
             key={item.title}
-            className="education-card"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-60px' }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="overflow-hidden rounded-[1.6rem] border border-[color:var(--border)] bg-[color:var(--bg-card)] shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition duration-250 hover:-translate-y-1 hover:shadow-[var(--shadow)]"
+            initial={{ opacity: 0, y: 40, scale: 0.96 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, margin: '-70px' }}
+            transition={{
+              duration: 0.6,
+              delay: index * 0.12,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            whileHover={{ y: -6, scale: 1.01 }}
           >
-            <div className="education-card__image">
+            <div className="h-[18rem] overflow-hidden">
               <img
                 src={item.image}
                 alt={item.alt}
@@ -50,12 +55,17 @@ export default function Education() {
                 decoding="async"
                 width="640"
                 height="420"
+                className="h-full w-full object-cover"
               />
             </div>
-            <div className="education-card__content">
-              <h3>{item.title}</h3>
-              <p>{item.institution}</p>
-              <span>{item.period}</span>
+            <div className="p-8">
+              <h3 className="mb-2 text-[1.8rem]">{item.title}</h3>
+              <p className="mb-3 text-[1.4rem] text-[color:var(--text-muted)]">
+                {item.institution}
+              </p>
+              <span className="text-[1.3rem] font-semibold text-[color:var(--accent)]">
+                {item.period}
+              </span>
             </div>
           </motion.article>
         ))}

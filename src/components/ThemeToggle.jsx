@@ -7,15 +7,13 @@ export default function ThemeToggle() {
   return (
     <button
       type="button"
-      className="theme-toggle"
+      className="rounded-full border border-[color:var(--border)] bg-[color:var(--bg-card)] p-2 transition-colors hover:border-[color:var(--accent)]"
       onClick={toggleTheme}
       aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
       title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
     >
-      <span className="theme-toggle__track">
-        <span className="theme-toggle__thumb">
-          {theme === 'dark' ? <HiMoon /> : <HiSun />}
-        </span>
+      <span className="flex h-[3.6rem] w-[3.6rem] items-center justify-center text-[1.8rem] text-[color:var(--accent)]">
+        {theme === 'dark' ? <HiMoon /> : <HiSun />}
       </span>
     </button>
   );
