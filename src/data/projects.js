@@ -162,4 +162,40 @@ export const projects = [
     github: 'https://github.com/SwarajThakre/Real_time-Tracking-System',
     category: 'Node',
   },
+  {
+    name: 'Background-color-changer',
+    description:
+      'A simple background color changer application built using React that allows users to change the background color of a webpage by clicking a button.',
+    image: 'assets/images/img/background.png',
+    url: 'https://background-changer-react-kappa.vercel.app/',
+    github: 'https://github.com/SwarajThakre/Background-Changer-React  ',
+    category: 'React',
+  },
+  {
+    name: 'Currency Converter',
+    description:
+      'A simple currency converter application built using React that allows users to convert between different currencies and check the latest exchange rates.',
+    image: 'assets/images/img/currencyconverter.png',
+    url: 'https://currency-converter-react-mauve.vercel.app/',
+    github: 'https://github.com/SwarajThakre/Currency_Converter_React',
+    category: 'React',
+  },
+  {
+    name: 'password-generator',
+    description:
+      'A simple password generator application built using React that allows users to generate strong and secure passwords based on their preferences.',
+    image: 'assets/images/img/passwordgenerator.png',
+    url: 'https://password-generator-react-pi-two.vercel.app/',
+    github: 'https://github.com/SwarajThakre/password_generator_react',
+    category: 'React',
+  },
+  {
+    name: 'Simple ToDo App',
+    description:
+      'A simple ToDo application built using React that allows users to add, edit, and delete tasks.',
+    image: 'assets/images/img/todoreact.png',
+    url: 'https://to-do-react-ufph.vercel.app/',
+    github: 'https://github.com/SwarajThakre/To-do_React',
+    category: 'React',
+  },
 ];
