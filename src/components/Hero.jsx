@@ -119,7 +119,7 @@ export default function Hero() {
             I am into{' '}
             <TypeAnimation
               sequence={[
-                'Frontend Dvelopment',
+                'Frontend Development',
                 2000,
                 'Web Designing',
                 2000,
