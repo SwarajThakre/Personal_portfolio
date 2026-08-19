@@ -46,7 +46,7 @@ export default function AllProjects() {
       <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
         {filteredProjects.map((project, index) => (
           <motion.article
-            key={project.name}
+            key={project.github ?? `${project.name}-${project.category}`}
             className="overflow-hidden rounded-[1.6rem] border border-[color:var(--border)] bg-[color:var(--bg-card)] transition duration-250 hover:shadow-[var(--shadow)]"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

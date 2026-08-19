@@ -190,7 +190,7 @@ export const projects = [
     category: 'React',
   },
   {
-    name: 'Simple ToDo App',
+    name: 'Simple React ToDo App',
     description:
       'A simple ToDo application built using React that allows users to add, edit, and delete tasks.',
     image: 'assets/images/img/todoreact.png',
