@@ -26,7 +26,7 @@ export default function Education() {
       <SectionHeading icon={FaGraduationCap}>
         My <span className="text-[color:var(--accent)]">Education</span>
       </SectionHeading>
-      <p className="mx-auto mb-16 max-w-[60rem] text-center text-[1.6rem] italic text-[color:var(--text-muted)]">
+      <p className="mb-16 max-w-2xl text-[1.8rem] leading-tight text-[color:var(--text-muted)]">
         Education is not the learning of facts, but the training of the mind to
         think.
       </p>
@@ -35,7 +35,7 @@ export default function Education() {
         {education.map((item, index) => (
           <motion.article
             key={item.title}
-            className="overflow-hidden rounded-[1.6rem] border border-[color:var(--border)] bg-[color:var(--bg-card)] shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition duration-250 hover:-translate-y-1 hover:shadow-[var(--shadow)]"
+            className="group overflow-hidden border-2 border-[color:var(--border)] bg-[color:var(--bg-card)] transition-colors duration-300 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]"
             initial={{ opacity: 0, y: 40, scale: 0.96 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, margin: '-70px' }}
@@ -59,11 +59,11 @@ export default function Education() {
               />
             </div>
             <div className="p-8">
-              <h3 className="mb-2 text-[1.8rem]">{item.title}</h3>
-              <p className="mb-3 text-[1.4rem] text-[color:var(--text-muted)]">
+              <h3 className="mb-2 text-[2rem] font-black uppercase tracking-tighter group-hover:text-black">{item.title}</h3>
+              <p className="mb-3 text-[1.4rem] text-[color:var(--text-muted)] group-hover:text-black">
                 {item.institution}
               </p>
-              <span className="text-[1.3rem] font-semibold text-[color:var(--accent)]">
+              <span className="text-[1.3rem] font-bold uppercase text-[color:var(--accent)] group-hover:text-black">
                 {item.period}
               </span>
             </div>

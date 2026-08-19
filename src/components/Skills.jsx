@@ -42,9 +42,9 @@ export default function Skills() {
           <motion.button
             key={category}
             type="button"
-            className={`rounded-full border border-[color:var(--border)] bg-[color:var(--bg-card)] px-6 py-3 text-[1.4rem] font-semibold font-['Outfit'] transition-all duration-250 ${
+          className={`border-2 border-[color:var(--border)] bg-[color:var(--bg-card)] px-6 py-3 text-[1.4rem] font-bold uppercase tracking-tight transition-all duration-250 ${
               activeCategory === category
-                ? 'border-[color:var(--accent)] bg-[color:var(--accent)] text-white shadow-[0_4px_16px_var(--accent-glow)]'
+                ? 'border-[color:var(--accent)] bg-[color:var(--accent)] text-black'
                 : 'text-[color:var(--text-muted)] hover:border-[color:var(--accent)] hover:text-[color:var(--accent)]'
             }`}
             onClick={() => setActiveCategory(category)}
@@ -71,7 +71,7 @@ export default function Skills() {
             <motion.div
               key={skill.name}
               variants={cardVariants}
-              className="flex flex-col items-center gap-4 rounded-[1.2rem] border border-[color:var(--border)] bg-[color:var(--bg-card)] p-8 transition-all duration-250 hover:-translate-y-1 hover:border-[color:var(--accent)] hover:bg-[color:var(--bg-card-hover)] hover:shadow-[var(--shadow)]"
+              className="group flex flex-col items-center gap-4 border-2 border-[color:var(--border)] bg-[color:var(--bg-card)] p-8 transition-all duration-300 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]"
               transition={{
                 duration: 0.35,
                 delay: index * 0.04,
@@ -88,9 +88,9 @@ export default function Skills() {
                 src={skill.icon}
                 alt={skill.name}
                 loading="lazy"
-                className="h-[4.8rem] w-[4.8rem] object-contain"
+                className="h-[4.8rem] w-[4.8rem] object-contain grayscale transition group-hover:grayscale-0"
               />
-              <span className="text-center text-[1.4rem] font-semibold text-[color:var(--heading)]">
+              <span className="text-center text-[1.4rem] font-bold uppercase tracking-tight text-[color:var(--heading)] group-hover:text-black">
                 {skill.name}
               </span>
             </motion.div>

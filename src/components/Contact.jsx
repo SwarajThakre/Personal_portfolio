@@ -45,7 +45,7 @@ export default function Contact() {
       </SectionHeading>
 
       <motion.div
-        className="mt-8 grid items-center gap-16 rounded-[2rem] border border-[color:var(--border)] bg-[color:var(--bg-card)] p-12 lg:grid-cols-[1fr_1.2fr]"
+        className="mt-8 grid items-center gap-16 border-2 border-[color:var(--border)] bg-[color:var(--bg-card)] p-6 md:p-12 lg:grid-cols-[1fr_1.2fr]"
         initial={{ opacity: 0, y: 48, scale: 0.96 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={{ once: true, margin: '-60px' }}
@@ -71,7 +71,7 @@ export default function Contact() {
               name="Name"
               placeholder="Full Name"
               required
-              className="w-full rounded-[1rem] border border-[color:var(--border)] bg-[color:var(--input-bg)] py-4 pl-14 pr-5 text-[1.5rem] text-[color:var(--heading)] placeholder:text-[color:var(--text-muted)] focus:border-[color:var(--accent)] focus:outline-none focus:ring-4 focus:ring-[color:var(--accent-soft)]"
+              className="w-full border-b-2 border-[color:var(--border)] bg-transparent py-5 pl-14 pr-2 text-[1.8rem] font-bold uppercase tracking-tight text-[color:var(--heading)] placeholder:text-[#27272a] focus:border-[color:var(--accent)] focus:outline-none"
             />
             <FaUser className="absolute left-5 top-1/2 -translate-y-1/2 text-[1.6rem] text-[color:var(--text-muted)]" />
           </div>
@@ -81,7 +81,7 @@ export default function Contact() {
               name="Email"
               placeholder="Email"
               required
-              className="w-full rounded-[1rem] border border-[color:var(--border)] bg-[color:var(--input-bg)] py-4 pl-14 pr-5 text-[1.5rem] text-[color:var(--heading)] placeholder:text-[color:var(--text-muted)] focus:border-[color:var(--accent)] focus:outline-none focus:ring-4 focus:ring-[color:var(--accent-soft)]"
+              className="w-full border-b-2 border-[color:var(--border)] bg-transparent py-5 pl-14 pr-2 text-[1.8rem] font-bold uppercase tracking-tight text-[color:var(--heading)] placeholder:text-[#27272a] focus:border-[color:var(--accent)] focus:outline-none"
             />
             <FaEnvelope className="absolute left-5 top-1/2 -translate-y-1/2 text-[1.6rem] text-[color:var(--text-muted)]" />
           </div>
@@ -90,7 +90,7 @@ export default function Contact() {
               type="text"
               name="Subject"
               placeholder="Subject"
-              className="w-full rounded-[1rem] border border-[color:var(--border)] bg-[color:var(--input-bg)] py-4 pl-14 pr-5 text-[1.5rem] text-[color:var(--heading)] placeholder:text-[color:var(--text-muted)] focus:border-[color:var(--accent)] focus:outline-none focus:ring-4 focus:ring-[color:var(--accent-soft)]"
+              className="w-full border-b-2 border-[color:var(--border)] bg-transparent py-5 pl-14 pr-2 text-[1.8rem] font-bold uppercase tracking-tight text-[color:var(--heading)] placeholder:text-[#27272a] focus:border-[color:var(--accent)] focus:outline-none"
             />
             <FaTag className="absolute left-5 top-1/2 -translate-y-1/2 text-[1.6rem] text-[color:var(--text-muted)]" />
           </div>
@@ -100,14 +100,14 @@ export default function Contact() {
               placeholder="Message"
               required
               rows={5}
-              className="min-h-[12rem] w-full resize-y rounded-[1rem] border border-[color:var(--border)] bg-[color:var(--input-bg)] py-4 pl-14 pr-5 text-[1.5rem] text-[color:var(--heading)] placeholder:text-[color:var(--text-muted)] focus:border-[color:var(--accent)] focus:outline-none focus:ring-4 focus:ring-[color:var(--accent-soft)]"
+              className="min-h-[12rem] w-full resize-y border-b-2 border-[color:var(--border)] bg-transparent py-5 pl-14 pr-2 text-[1.8rem] font-bold uppercase tracking-tight text-[color:var(--heading)] placeholder:text-[#27272a] focus:border-[color:var(--accent)] focus:outline-none"
             />
             <FaCommentDots className="absolute left-5 top-7 text-[1.6rem] text-[color:var(--text-muted)]" />
           </div>
 
           <motion.button
             type="submit"
-            className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[color:var(--accent)] to-[#c4155f] px-8 py-4 text-[1.5rem] font-semibold text-white shadow-[0_4px_20px_var(--accent-glow)] transition-transform duration-200 hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-70"
+            className="kinetic-button w-full gap-3 disabled:pointer-events-none disabled:opacity-50"
             disabled={status === 'sending'}
             whileHover={{ scale: 1.03, y: -2, rotate: 0.5 }}
             whileTap={{ scale: 0.97 }}

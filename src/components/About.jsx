@@ -25,7 +25,7 @@ export default function About() {
             decoding="async"
             width="480"
             height="520"
-            className="mx-auto w-full max-w-[40rem] rounded-[1.6rem] shadow-[var(--shadow)]"
+            className="mx-auto w-full max-w-[40rem] border-2 border-[color:var(--border)] grayscale transition duration-300 hover:grayscale-0"
           />
         </motion.div>
 
@@ -37,7 +37,7 @@ export default function About() {
           whileHover={{ y: -4, scale: 1.01, rotate: 0.3 }}
         >
           <h3 className="mb-3 text-[2.8rem]">I&apos;m Swaraj</h3>
-          <span className="mb-6 inline-block rounded-full bg-[color:var(--accent-soft)] px-5 py-2 text-[1.4rem] font-semibold text-[color:var(--accent)]">
+          <span className="mb-6 inline-block border-2 border-[color:var(--accent)] px-4 py-2 text-[1.4rem] font-bold uppercase tracking-wide text-[color:var(--accent)]">
             Front-end Developer
           </span>
           <p className="mb-8 text-[1.6rem] leading-[1.8] text-[color:var(--text)]">
@@ -65,7 +65,7 @@ export default function About() {
 
           <motion.a
             href="https://drive.google.com/file/d/1wLQu3d7mrBuSIBYblyAlmVNXDwLkfhyA/view?usp=drive_link"
-            className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[color:var(--accent)] to-[#c4155f] px-8 py-4 text-[1.5rem] font-semibold text-white shadow-[0_4px_20px_var(--accent-glow)] transition-transform duration-200 hover:-translate-y-0.5"
+            className="kinetic-button gap-3"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05, y: -3, rotate: 1 }}

@@ -22,19 +22,19 @@ export default function AllProjects() {
       <SectionHeading icon={FaLaptopCode}>
         All <span className="text-[color:var(--accent)]">Projects</span>
       </SectionHeading>
-      <p className="mx-auto mb-16 max-w-[60rem] text-center text-[1.6rem] italic text-[color:var(--text-muted)]">
+      <p className="mb-16 max-w-2xl text-[1.8rem] leading-tight text-[color:var(--text-muted)]">
         A complete collection of my work and experiments.
       </p>
 
-      <div className="mx-auto mb-12 flex max-w-[70rem] flex-wrap justify-center gap-4">
+      <div className="mb-12 flex flex-wrap gap-3">
         {categories.map((category) => (
           <button
             key={category}
             type="button"
-            className={`rounded-full border border-[color:var(--border)] bg-[color:var(--bg-card)] px-6 py-3 text-[1.4rem] font-semibold transition-all duration-200 ${
+            className={`rounded-lg border border-[color:var(--border)] bg-[color:var(--bg-card)] px-5 py-3 text-[1.4rem] font-medium transition-all duration-200 ${
               activeCategory === category
-                ? 'border-[color:var(--accent)] bg-[color:var(--accent)] text-white'
-                : 'text-[color:var(--text)] hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)] hover:text-white'
+                ? 'border-amber-500/40 bg-[color:var(--accent-soft)] text-[color:var(--accent)]'
+                : 'text-[color:var(--text)] hover:border-white/15 hover:bg-white/5'
             }`}
             onClick={() => setActiveCategory(category)}
           >
@@ -47,7 +47,7 @@ export default function AllProjects() {
         {filteredProjects.map((project, index) => (
           <motion.article
             key={project.github ?? `${project.name}-${project.category}`}
-            className="overflow-hidden rounded-[1.6rem] border border-[color:var(--border)] bg-[color:var(--bg-card)] transition duration-250 hover:shadow-[var(--shadow)]"
+            className="kinetic-card group overflow-hidden"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-60px' }}
@@ -64,10 +64,9 @@ export default function AllProjects() {
                 height="420"
                 className="h-full w-full object-cover transition duration-400 hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--bg-card)] to-transparent" />
             </div>
             <div className="p-8">
-              <h3 className="mb-3 text-[2rem]">{project.name}</h3>
+              <h3 className="mb-3 text-[2.2rem] tracking-tight">{project.name}</h3>
               <p className="mb-6 text-[1.4rem] leading-[1.7] text-[color:var(--text-muted)]">
                 {project.description}
               </p>
@@ -76,7 +75,7 @@ export default function AllProjects() {
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg bg-[color:var(--secondary-soft)] px-4 py-3 text-[1.3rem] font-semibold text-[color:var(--secondary)] transition-colors hover:bg-[color:var(--secondary)] hover:text-white"
+                  className="inline-flex items-center gap-2 rounded-lg border border-white/15 px-4 py-3 text-[1.3rem] font-medium transition hover:bg-white/5"
                 >
                   View Project <FaExternalLinkAlt />
                 </a>
@@ -84,7 +83,7 @@ export default function AllProjects() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg bg-[color:var(--secondary-soft)] px-4 py-3 text-[1.3rem] font-semibold text-[color:var(--secondary)] transition-colors hover:bg-[color:var(--secondary)] hover:text-white"
+                  className="inline-flex items-center gap-2 rounded-lg border border-white/15 px-4 py-3 text-[1.3rem] font-medium transition hover:bg-white/5"
                 >
                   View Code <FaGithub />
                 </a>
